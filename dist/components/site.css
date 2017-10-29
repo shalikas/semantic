@@ -13,7 +13,7 @@
              Page
 *******************************/
 
-@import url('https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&subset=latin');
+@import url('https://fonts.googleapis.com/css?family=Open Sans:400,600,700&subset=latin');
 html,
 body {
   height: 100%;
@@ -27,7 +27,7 @@ body {
   overflow-x: hidden;
   min-width: 320px;
   background: #FFFFFF;
-  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   font-size: 14px;
   line-height: 1.4285em;
   color: rgba(0, 0, 0, 0.87);
@@ -44,7 +44,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   line-height: 1.28571429em;
   margin: calc(2rem -  0.14285714em ) 0em 1rem;
   font-weight: bold;
@@ -195,6 +195,46 @@ body .ui.inverted::-webkit-scrollbar-thumb:hover {
         Global Overrides
 *******************************/
 
+body {
+  background: url("./../themes/default/assets/images/bg.jpg") no-repeat 50% 50%;
+  background-size: Cover;
+}
+body > .grid {
+  height: 100%;
+}
+p {
+  color: white;
+}
+.upper {
+  text-transform: uppercase;
+}
+.column {
+  max-width: 465px;
+}
+/*Reservation*/
+.reservation p {
+  text-align: left;
+  font-weight: bold;
+}
+.reservation h1,
+h2 {
+  text-align: left;
+  font-size: 32px;
+}
+.reservation h1 {
+  color: #00c0f4;
+}
+.reservation h2 {
+  color: #fff;
+  font-weight: 200;
+}
+.reservation h2 + p {
+  font-size: 16px;
+  font-weight: 600;
+}
+.reservation h2 strong {
+  font-weight: 700;
+}
 
 
 /*******************************

@@ -6,7 +6,7 @@
        Fonts
 --------------------*/
 
-@fontName          : 'Lato';
+@fontName          : 'Open Sans';
 @fontSmoothing     : antialiased;
 
 @headerFont        : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;
@@ -14,7 +14,7 @@
 
 @googleFontName    : @fontName;
 @importGoogleFonts : true;
-@googleFontSizes   : '400,700,400italic,700italic';
+@googleFontSizes   : '400,600,700';
 @googleSubset      : 'latin';
 
 @googleProtocol    : 'https://';
@@ -220,8 +220,8 @@
 @yellow           : #FBBD08;
 @olive            : #B5CC18;
 @green            : #21BA45;
-@teal             : #00B5AD;
-@blue             : #2185D0;
+@teal             : #00c0f4;
+@blue             : #00c0f4;
 @violet           : #6435C9;
 @purple           : #A333C8;
 @pink             : #E03997;

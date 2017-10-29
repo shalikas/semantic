@@ -2,3 +2,6 @@
          Theme Overrides
 *******************************/
 
+.ui.teal.dividing.header{
+  border-bottom: 1px solid #00c0f4;
+}

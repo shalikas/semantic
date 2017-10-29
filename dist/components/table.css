@@ -683,19 +683,19 @@
 
 /* Teal */
 .ui.teal.table {
-  border-top: 0.2em solid #00B5AD;
+  border-top: 0.2em solid #00c0f4;
 }
 .ui.inverted.teal.table {
-  background-color: #00B5AD !important;
+  background-color: #00c0f4 !important;
   color: #FFFFFF !important;
 }
 
 /* Blue */
 .ui.blue.table {
-  border-top: 0.2em solid #2185D0;
+  border-top: 0.2em solid #00c0f4;
 }
 .ui.inverted.blue.table {
-  background-color: #2185D0 !important;
+  background-color: #00c0f4 !important;
   color: #FFFFFF !important;
 }
 

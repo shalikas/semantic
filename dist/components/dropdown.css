@@ -1499,6 +1499,22 @@ select.ui.dropdown {
   content: "\f0da";
 }
 */
+.ui.selection.dropdown {
+  min-width: initial;
+  width: 100%;
+  border-radius: 0;
+  text-align: center;
+  color: #555555;
+  font-weight: 600;
+}
+.ui.dropdown > .dropdown.icon:before {
+  content: "\f078";
+  font-family: 'Icons';
+}
+.ui.default.dropdown:not(.button) > .text,
+.ui.dropdown:not(.button) > .default.text {
+  color: #555555;
+}
 
 
 /*******************************

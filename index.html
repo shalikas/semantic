@@ -6,47 +6,74 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Semantic-ui HarborTouch</title>
   <link rel="stylesheet" href="./dist/semantic.min.css">
-  <link rel="stylesheet" href="./dist/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui-calendar/0.0.8/calendar.min.css">
 </head>
 <body>
-
-
   <div class="ui middle aligned center aligned grid">
-    <div class="column">
-      <h2 class="ui teal image header">
-        <img src="assets/images/logo.png" class="image">
-        <div class="content">
-          Log-in to your account
-        </div>
-      </h2>
-      <form class="ui large form">
-        <div class="ui stacked segment">
-          <div class="field">
-            <div class="ui left icon input">
-              <i class="user icon"></i>
-              <input type="text" name="email" placeholder="E-mail address">
+    <div class="column reservation">
+      <h1 class="ui left aligned teal">Jun Park QA</h1>
+      <p class="upper">2202 N Irving Street, Allentown, PA 18109 <br />PHONE: (800) 201-0461</p>
+      <div class="ui teal dividing header"></div>
+      <h2>Make a <strong>Reservation</strong>!</h2>
+      <p>Select the party size, date and time for your reservation.</p>
+
+      <div class="ui three column doubling grid">
+        <div class="column">
+          <div class="ui selection dropdown">
+            <input type="hidden" name="gender">
+            <i class="dropdown icon"></i>
+            <div class="default text">2</div>
+            <div class="menu">
+              <div class="item" data-value="1">1</div>
+              <div class="item" data-value="2">2</div>
+              <div class="item" data-value="3">3</div>
             </div>
           </div>
-          <div class="field">
-            <div class="ui left icon input">
-              <i class="lock icon"></i>
-              <input type="password" name="password" placeholder="Password">
+        </div>
+        <div class="column">
+          <div class="ui calendar" id="example13">
+            <div class="ui input right icon">
+              <i class="calendar icon"></i>
+              <input type="text" placeholder="06/25/2017">
             </div>
           </div>
-          <div class="ui fluid large teal submit button">Login</div>
         </div>
-
-        <div class="ui error message"></div>
-
-      </form>
-
-      <div class="ui message">
-        New to us? <a href="#">Sign Up</a>
+        <div class="column">
+          <div class="ui calendar" id="example3">
+            <div class="ui input right icon">
+              <i class="time icon"></i>
+              <input type="text" placeholder="Time">
+            </div>
+          </div>
+        </div>
       </div>
+      <button class="ui primary button">Check Availability</button>
+
     </div>
   </div>
-
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui-calendar/0.0.8/calendar.min.js"></script>
 
 <script type="text/javascript" src="./dist/semantic.min.js"></script>
+<script>
+  $('#example13').calendar({
+  type: 'date',
+  formatter: {
+    date: function (date, settings) {
+      if (!date) return '';
+      var day = date.getDate();
+      var month = date.getMonth() + 1;
+      var year = date.getFullYear();
+      return month + '/' + day + '/' + year;
+    }
+  }
+});
+$('#example3').calendar({
+  type: 'time'
+});
+$('.ui.dropdown')
+  .dropdown()
+;
+</script>
 </body>
 </html>
