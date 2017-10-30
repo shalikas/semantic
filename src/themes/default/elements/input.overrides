@@ -6,6 +6,7 @@
   color:#555555;
   border-radius: 0;
   width:100%;
+  border:none;
 }
 .ui.icon.input>i.icon{
   opacity:1;

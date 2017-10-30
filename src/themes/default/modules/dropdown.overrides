@@ -67,6 +67,7 @@
   text-align:center;
   color:#555555;
   font-weight:600;
+  border:none;
 }
 .ui.dropdown>.dropdown.icon:before{
   content: "\f078";

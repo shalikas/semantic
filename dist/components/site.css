@@ -196,8 +196,11 @@ body .ui.inverted::-webkit-scrollbar-thumb:hover {
 *******************************/
 
 body {
-  background: url("./../themes/default/assets/images/bg.jpg") no-repeat 50% 50%;
-  background-size: Cover;
+  background: url("./../themes/default/assets/images/bg.jpg") no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  background-position: 50%;
 }
 body > .grid {
   height: 100%;
@@ -214,7 +217,7 @@ p {
 /*Reservation*/
 .reservation p {
   text-align: left;
-  font-weight: bold;
+  font-weight: 600;
 }
 .reservation h1,
 h2 {
@@ -234,6 +237,45 @@ h2 {
 }
 .reservation h2 strong {
   font-weight: 700;
+}
+.reservation.column span {
+  color: white;
+  font-size: 14px;
+  text-align: left;
+  padding-bottom: 5px;
+  float: left;
+  font-weight: 600;
+}
+.prefootertext {
+  padding-top: 30px;
+}
+.prefootertext p {
+  font-weight: 400;
+  padding-bottom: 15px;
+}
+/*footer*/
+.copyright {
+  position: absolute;
+  color: white;
+  left: 30px;
+  bottom: 30px;
+  font-size: 12px;
+}
+/**/
+@media only screen and (max-width: 385px) {
+  .column.reservation {
+    margin: 15px;
+  }
+  .ui.three.column.grid {
+    padding: 15px;
+  }
+  .ui.three.column.grid .column {
+    padding: 0;
+  }
+  .ui.middle.aligned.center.aligned.grid {
+    display: block;
+    width: 100%;
+  }
 }
 
 
